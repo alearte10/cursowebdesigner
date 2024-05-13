@@ -1,0 +1,66 @@
+ .responsivo {
+     display: flex;
+     flex-flow: row wrap;
+     text-align: center;
+ }
+
+ .responsivo> * {
+     padding: 10px;
+     margin: 10px;
+     flex: 1 100%;
+     border-radius: 10px;
+ }
+
+ .header{
+     background: rgb(138, 47, 223);
+     height: 120px;
+ }
+
+ nav    {
+     background-color: #fdfdfd;
+     padding: 0.5%;
+     text-align: center;
+ }
+
+ nav a  {
+     color: #000000;
+     text-decoration: none;
+     padding: 0%;
+ }
+ footer {
+     background: rgb(163, 9, 73);
+     height: 80px;
+ }
+
+ .article {
+    text-align: left;
+    background: rgb(223, 236, 99);
+    height: 300px;
+    font-size: 24px;
+ }
+
+ .aside{
+    background: rosybrown;
+ }
+ @media all and (min-width: 800px){
+    .article {
+       flex: 1;
+    }
+
+    .aside {
+        order: 1;
+    } 
+
+    .article {
+        order: 2;
+    } 
+
+    .footer { 
+        order: 3;
+    }
+    
+
+
+}
+
+

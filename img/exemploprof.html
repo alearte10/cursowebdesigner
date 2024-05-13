@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    /* Estilo para o contêiner externo */
+    .containerExterno {
+      display: flex; /* Usando flexbox para layout */
+      flex-direction: column; /* Coloca os elementos em uma coluna */
+      text-align: center; /* Centraliza o texto */
+      background-color: #f0f0f0; /* Cor de fundo para o contêiner externo */
+    }
+
+    /* Estilo para o cabeçalho */
+    .cabecalho {
+      background-color: red; /* Cor de fundo para o cabeçalho */
+      padding: 20px; /* Adiciona espaço interno */
+    }
+
+    /* Estilo para o menu */
+    .menu {
+      background-color: blue; /* Cor de fundo para o menu */
+      padding: 10px; /* Adiciona espaço interno */
+      
+    }
+
+    /* Estilo para os links do menu */
+    .menu a {
+      text-decoration: none; /* Remove a decoração de texto dos links */
+      color:white; /* Define a cor do texto dos links */
+      margin: 20px; /* Adiciona margem aos links */
+    }
+
+    /* Estilo para o contêiner de conteúdo */
+    .containerConteudo {
+      display: flex; /* Usando flexbox para layout */
+      flex: 1; /* Ocupa todo o espaço disponível verticalmente */
+      flex-direction: column; /* Coloca os elementos em uma coluna */
+    }
+
+    /* Estilo para as colunas de conteúdo */
+    .conteudoColuna1, .conteudoColuna2 {
+      width: 100%; /* As colunas ocupam toda a largura disponível */
+      color:white;
+    }
+    .conteudoLinha1{
+        background-color: chartreuse;
+    }
+    .conteudoLinha2{
+        background-color:deeppink;
+        height:200px;
+        
+    }
+    .conteudoLinha2 img{ 
+        height: auto; 
+        max-width: 100%;
+        width: 100%;
+
+    }
+    .conteudoColuna1 {
+        background-color: gold;
+    }
+    .conteudoColuna2 {
+        background-color: blueviolet;
+    }
+    /* Estilo para as imagens dentro da coluna 1 */
+    .conteudoLinha1 img {
+      max-width: 100%; /* A imagem ocupa no máximo 100% da largura da coluna */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+
+    /* Estilo para o rodapé */
+    .rodape {
+      background-color: black; /* Cor de fundo para o rodapé */
+      padding: 20px; /* Adiciona espaço interno */
+      color:white;
+    }
+
+    /* Media query para telas maiores */
+    @media all and (min-width: 600px) {
+      /* Alinhamento do texto à esquerda para telas maiores */
+      .containerExterno {
+        text-align: left;
+      }
+
+      /* Altera a direção do flex container para row em telas maiores */
+      .containerConteudo {
+        flex-direction: row;
+      }
+
+      /* Divide igualmente o espaço para as colunas em telas maiores */
+      .conteudoColuna1, .conteudoColuna2 {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Contêiner externo -->
+  <div class="containerExterno">
+    <!-- Cabeçalho -->
+    <header class="cabecalho"> 
+      
+    </header>
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="#">Página Inicial</a> 
+    </nav>
+    <!-- Contêiner de conteúdo -->
+    <section class="containerConteudo">
+      <!-- Coluna 1 de conteúdo -->
+      <div class="conteudoColuna1">
+        <div class="conteudoLinha1">
+          <!-- Imagem -->
+          <img src="imagem2.jpeg" alt="" />
+        </div>
+        <!-- Artigo -->
+        <div class="conteudoLinha2">
+          
+        </div>
+      </div>
+      <!-- Coluna 2 de conteúdo -->
+      <div class="conteudoColuna2">
+        <!-- Barra Lateral -->
+        <div class="barraLateral">Lateral</div>
+      </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <i>Rodapé</i>
+    </footer>
+  </div>
+</body>
+</html>

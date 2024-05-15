@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+    /* Estilo para o contêiner externo */
+    .containerExterno {
+      display: flex; /* Usando flexbox para layout */
+      flex-direction: column; /* Coloca os elementos em uma coluna */
+      text-align: center; /* Centraliza o texto */
+      background-image: url("fundo.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+    
+    }
+    
+
+    /* Estilo para o cabeçalho */
+    .cabecalho {
+      background-color: rgba(255, 0, 0, 0.055); /* Cor de fundo para o cabeçalho */
+      padding: 20px; /* Adiciona espaço interno */
+    }
+
+    /* Estilo para o menu */
+    .menu {
+      background-color: rgba(107, 15, 143, 0.767); /* Cor de fundo para o menu */
+      padding: 10px; /* Adiciona espaço interno */
+    }
+
+    /* Estilo para os links do menu */
+    .menu a {
+      text-decoration: none; /* Remove a decoração de texto dos links */
+      color:white; /* Define a cor do texto dos links */
+      margin: 20px; /* Adiciona margem aos links */
+    }
+
+    /* Estilo para o contêiner de conteúdo */
+    .containerConteudo {
+      display: flex; /* Usando flexbox para layout */
+      flex: 1; /* Ocupa todo o espaço disponível verticalmente */
+      flex-direction: column; /* Coloca os elementos em uma coluna */
+    }
+
+    /* Estilo para as colunas de conteúdo */
+    .conteudoColuna1, .conteudoColuna2 {
+      width: 100%; /* As colunas ocupam toda a largura disponível */
+      color:white;
+    }
+    .conteudoLinha1{
+        background-color: rgba(128, 255, 0, 0.418);
+    }
+    .conteudoLinha2{
+        background-color:rgba(255, 20, 145, 0.493);
+        
+    }
+    .conteudoColuna1 {
+        background-color: rgba(255, 217, 0, 0.274);
+    }
+    .conteudoColuna2 {
+        background-color: rgba(137, 43, 226, 0.178);
+      
+        
+         
+    }
+    /* Estilo para as imagens dentro da coluna 1 */
+    .conteudoLinha2 img {
+      width: 100%; /* A imagem ocupa no máximo 100% da largura da coluna */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+    .conteudoColuna2 img{
+      float: right;
+      max-width: 30%;
+      height: auto;
+    }  
+    
+    p{
+       
+     
+      
+     
+      
+    } 
+    
+
+    /* Estilo para o rodapé */
+    .rodape {
+      background-color: black; /* Cor de fundo para o rodapé */
+      padding: 20px; /* Adiciona espaço interno */
+      color:white;
+    }
+
+    /* Media query para telas maiores */
+    @media all and (min-width: 600px) {
+      /* Alinhamento do texto à esquerda para telas maiores */
+      .containerExterno {
+        text-align: left;
+      }
+     
+    
+      /* Altera a direção do flex container para row em telas maiores */
+      .containerConteudo {
+        flex-direction: row;
+      }
+
+      /* Divide igualmente o espaço para as colunas em telas maiores */
+      .conteudoColuna1, .conteudoColuna2 {
+        width: 100%;
+      }
+    
+      
+
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Contêiner externo -->
+  <div class="containerExterno">
+    <!-- Cabeçalho -->
+    <header class="cabecalho"> 
+      <h1>Header</h1>
+    </header>
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="#">MENU</a> 
+    </nav>
+    <!-- Contêiner de conteúdo -->
+    <section class="containerConteudo">
+      <!-- Coluna 1 de conteúdo -->
+      <div class="conteudoColuna1">
+        <div class="conteudoLinha1">
+          <!-- Imagem -->
+          
+        </div>
+        <!-- Artigo -->
+        <div class="conteudoLinha2"><img src="imagem2.jpeg" alt="" /></div>
+          
+      </div>
+
+      <!-- Coluna 2 de conteúdo -->
+      <div class="conteudoColuna2">
+        <!-- Barra Lateral -->
+        <div class="barraLateral"><img src="imagem0.JPG" alt="" />
+          
+        
+          <p><n>ADVANCED DISPLAY </n><p> The 6.7-inch Super Retina XDR display with ProMotion increases refresh rates to 120 Hz when you need more impressive graphics. Dynamic Island shows alerts and Live Activities. Plus, with the Always-On screen, you don't even have to touch the Lock Screen to keep an eye on everything.
+            REVOLUTIONARY A17 PRO CHIP 
+          </p></div>
+      </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <i>Rodapé</i>
+    </footer>
+  </div>
+</body>
+</html>

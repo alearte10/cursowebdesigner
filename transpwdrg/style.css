@@ -19,7 +19,7 @@ a   {
 h1 {
    color: #00C4CC;
    margin-right: 150px;
-    float:inline-end;
+   float:inline-end;
 
    
    
@@ -38,32 +38,32 @@ h2  {
     padding: 10px;
     font-size: larger;
     text-align: center;
-   
+ 
     
-
-   
 }
 
 
-   
 
 
-header {
+
+nav {
     background-color: #142140;
     padding:13px;
     height: 33px;
+    text-align: center;
     
 
    
     
 }
-header img{
+nav img{
    
     position: absolute; /* Posicionamento absoluto em relação ao cabeçalho */
     top: 0; /* Alinha a imagem no topo */
     left: 0; /* Alinha a imagem à esquerda */
     width: 115px; /* Largura da imagem (ajuste conforme necessário) */
     height: auto;
+
 }
 
 

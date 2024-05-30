@@ -1,5 +1,5 @@
 body {
-    font-family:Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to left, #142140, #00C4CC );
@@ -10,13 +10,13 @@ a   {
     text-decoration: none;
     color: #fff;
     text-align: center;
-     font-size:80%;
-     font-weight:bolder;
+    font-size:80%;
+    font-weight:bolder;
  
     
 }
 
-h1 {
+#titulo-quemsomos {
    color: #00C4CC;
    margin-right: 150px;
    float:inline-end;
@@ -26,45 +26,46 @@ h1 {
       
 }
 
-h2  {
-   
-    position: inline-end;
-    float:inline-end;
-    top: 92%;
-    left: 70%;
-    
-     color: #ffffff;
+#texto-quemsomos  {
+   position: sticky;
+    margin-top: -50%;
+    float: right;
+    color: #ffffff;
     font-weight: normal;
     padding: 10px;
     font-size: larger;
-    text-align: center;
+    margin-right: 5%;
+    
+   
+
+    
  
     
 }
-
-
-
-
 
 nav {
     background-color: #142140;
     padding:13px;
     height: 33px;
+    
     text-align: center;
     
 
    
     
+
 }
+
 nav img{
    
     position: absolute; /* Posicionamento absoluto em relação ao cabeçalho */
     top: 0; /* Alinha a imagem no topo */
     left: 0; /* Alinha a imagem à esquerda */
     width: 115px; /* Largura da imagem (ajuste conforme necessário) */
-    height: auto;
+    height: 59px;
 
 }
+
 
 
 section img{
@@ -77,14 +78,18 @@ section img{
 
 
 }
+
 .quemsomos img {
-   
    
     left: 0; /* Alinha a imagem à esquerda */
     width: 50%; /* Largura da imagem (ajuste conforme necessário) */
     height: auto;
 
+
+
 }
+
+
 footer {
     background-color: #333;
     color: #fff;

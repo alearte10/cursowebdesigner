@@ -2,6 +2,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    border: 0;
     background-image: linear-gradient(to left, #142140, #00C4CC );
 
 }
@@ -10,16 +11,21 @@ a   {
     text-decoration: none;
     color: #fff;
     text-align: center;
-    font-size:80%;
+    font-size:60%;
     font-weight:bolder;
  
     
 }
 
 #titulo-quemsomos {
-   color: #00C4CC;
+   color: #1b0555;
    margin-right: 150px;
    float:inline-end;
+   position: relative;
+   top: 130px;
+   right: 20px;
+   font-size: 40px;
+
 
    
    
@@ -27,14 +33,14 @@ a   {
 }
 
 #texto-quemsomos  {
-   position: sticky;
-    margin-top: -50%;
+   position:relative;
+    margin-top: -45%;
     float: right;
-    color: #ffffff;
+    color: #343b66;
     font-weight: normal;
     padding: 10px;
     font-size: larger;
-    margin-right: 5%;
+    margin-right: 10%;
     
    
 
@@ -82,12 +88,31 @@ section img{
 .quemsomos img {
    
     left: 0; /* Alinha a imagem à esquerda */
-    width: 50%; /* Largura da imagem (ajuste conforme necessário) */
+    width: 100%; /* Largura da imagem (ajuste conforme necessário) */
     height: auto;
+    display: inline-block;
 
 
 
 }
+
+#titulo-serviços{
+    color: #1b0555;
+    margin-right: 150px;
+    float:center;
+    position: relative;
+    top: 130px;
+    right: 20px;
+    font-size: 40px;
+
+}
+.serviços img{
+   
+   float: left;
+   height: 100px;
+   width: 100px;
+}
+  
 
 
 footer {

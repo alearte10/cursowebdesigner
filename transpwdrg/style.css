@@ -17,7 +17,7 @@ a   {
     
 }
 
-#titulo-quemsomos {
+.titulo-quemsomos {
    color: #1b0555;
    margin-right: 150px;
    float:inline-end;
@@ -25,29 +25,19 @@ a   {
    top: 130px;
    right: 20px;
    font-size: 40px;
-
-
-   
-   
-      
 }
 
-#texto-quemsomos  {
-   position:relative;
-    margin-top: -45%;
-    float: right;
-    color: #343b66;
-    font-weight: normal;
-    padding: 10px;
-    font-size: larger;
-    margin-right: 10%;
-    
-   
-
-    
- 
-    
+.texto-quemsomos  {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: center;
+        
 }
+.slider,
+.texto-quemsomos {
+        width: 50%;
+      }
 
 nav {
     background-color: #142140;

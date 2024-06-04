@@ -8,6 +8,22 @@
     overflow: hidden;
 }
 
+.conteudolinhadireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: center;
+    
+}
+.slider,
+.conteudolinhadireita {
+    width: 100%;
+}
+
+.slider,
+.conteudolinhadireita {
+        width: 50%;
+      }
 
 .slides {
     width: 400%;

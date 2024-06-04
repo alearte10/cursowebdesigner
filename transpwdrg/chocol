@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Projeto Chocolate</title>
+  <style>
+    /* Estilo para o contêiner externo */
+    .containerExterno {
+      display: flex;
+      /* Usando flexbox para layout */
+      flex-direction: column;
+      /* Coloca os elementos em uma coluna */
+      text-align: center;
+      /* Centraliza o texto */
+      background-color: #f0f0f0;
+      /* Cor de fundo para o contêiner externo */
+    }
+
+    /* Estilo para o cabeçalho */
+    .cabecalho {
+      background-color: rgb(165, 55, 55);
+      /* Cor de fundo para o cabeçalho */
+      padding: 20px;
+      /* Adiciona espaço interno */
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    /* Estilo para o menu */
+    .menu {
+      background-color: rgb(255, 51, 0);
+      /* Cor de fundo para o menu */
+      padding: 10px;
+      /* Adiciona espaço interno */
+      text-align: center;
+    }
+
+    /* Estilo para os links do menu */
+    .menu a {
+      text-decoration: none;
+      /* Remove a decoração de texto dos links */
+      color: white;
+      /* Define a cor do texto dos links */
+      margin: 20px;
+      /* Adiciona margem aos links */
+    }
+
+    /* Estilo para o contêiner de conteúdo */
+    .containerConteudo {
+      display: flex;
+      /* Usando flexbox para layout */
+      flex: 1;
+      /* Ocupa todo o espaço disponível verticalmente */
+      flex-direction: column;
+      /* Coloca os elementos em uma coluna */
+    }
+
+    .containerRedeSocial {
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+    }
+
+    .containerRedeSocial img {
+      height: 25px;
+      width: 25px;
+      padding: 10px;
+
+    }
+
+    /* Estilo para as colunas de conteúdo */
+    .conteudoColuna1,
+    .conteudoColuna2 {
+      width: 100%;
+      /* As colunas ocupam toda a largura disponível */
+      color: rgba(255, 255, 255, 0);
+    }
+
+    .conteudoLinha2 {
+      height: 200px;
+      color: black;
+      text-align: center;
+    }
+
+    .conteudoColuna1 {
+      background-color: rgb(241, 108, 190);
+      text-align: center;
+    }
+
+    .conteudoColuna2 {
+      background-color: rgb(196, 171, 171);
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .linhaprodutos {
+      flex: 2;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .titulolinhaprodutos {
+      flex: 1;
+      color: black;
+    }
+
+    /* Estilo para as imagens dentro da coluna 1 */
+    .conteudoLinha1 img {
+      max-width: 100%;
+      /* A imagem ocupa no máximo 100% da largura da coluna */
+      height: auto;
+      width: 100%;
+      /* Mantém a proporção da imagem */
+
+
+    }
+
+    /* Estilo para o rodapé */
+    .rodape {
+      background-color: black;
+      /* Cor de fundo para o rodapé */
+      padding: 20px;
+      /* Adiciona espaço interno */
+      color: white;
+      text-align: center;
+    }
+
+    /* Media query para telas maiores */
+    @media all and (min-width: 600px) {
+
+      /* Alinhamento do texto à esquerda para telas maiores */
+      .containerExterno {
+        text-align: left;
+      }
+
+      /* Altera a direção do flex container para row em telas maiores */
+      .containerConteudo {
+        flex-direction: row;
+      }
+
+      /* Divide igualmente o espaço para as colunas em telas maiores */
+      .conteudoColuna1,
+      .conteudoColuna2 {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Contêiner externo -->
+  <div class="containerExterno">
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <h1>PROJETO CHOCOLATE</h1>
+    </header>
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="menu">Página Inicial</a>
+      <a href="sobre" title="Sobre">Sobre</a>
+      <a href="contato" title="Contato">Contato</a>
+    </nav>
+    <!-- Contêiner de conteúdo -->
+    <section class="containerConteudo">
+      <!-- Coluna 1 de conteúdo -->
+      <div class="conteudoColuna1">
+        <div class="conteudoLinha1">
+          <!-- Imagem -->
+          <img src="chococabeca.jpeg" alt="chococabeca" />
+        </div>
+        <!-- Artigo -->
+        <div class="conteudoLinha2">
+          <h1>CHOCOLATE TA PRA MIM</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Expedita tempore magnam facilis ipsa? Labore delectus ea ipsa quod, illo porro,
+          quidem odit sapiente officia consequatur assumenda, temporibus voluptates a ipsam
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Expedita tempore magnam facilis ipsa? Labore delectus ea ipsa quod, illo porro,
+          quidem odit sapiente officia consequatur assumenda, temporibus
+        </div>
+      </div>
+      <!-- Coluna 2 de conteúdo -->
+      <div class="conteudoColuna2">
+        <!-- Barra Lateral -->
+        <div class="barraLateral">
+          <h1 class="titulolinhaprodutos">
+            CONHEÇA NOSSOS PRODUTOS
+          </h1>
+          <img class="linhaprodutos" src="linhaprodutos.png" alt="linhaprodutos" />
+
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <i>* TODOS OS DIREITOS RESERVADOS *</i>
+      <div class="containerRedeSocial">
+        <a href="https://wa.me/5511958916106" target="_blank">
+          <img src="whats.png" alt="whats.png" />
+        </a>
+        <a href="https://www.instagram.com/aleartepersonalizados/" target="_blank">
+          <img src="insta.png" alt="insta.png" />
+        </a>
+        <a href="https://www.facebook.com/alflapneus.alflapneus?mibextid=ZbWKwL" target="_blank">
+          <img src="face.png" alt="face" />
+        </a>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

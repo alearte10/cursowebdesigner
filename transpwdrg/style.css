@@ -3,88 +3,72 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-image: linear-gradient(to left, #142140, #00C4CC );
+    background-image: linear-gradient(to left, #142140, #00C4CC);
 
 }
 
-a   {
+a {
     text-decoration: none;
     color: #fff;
     text-align: center;
-    font-size:60%;
-    font-weight:bolder;
- 
-    
+    font-size: 60%;
+    font-weight: bolder;
+
+
 }
 
-.titulo-quemsomos {
-   color: #1b0555;
-   margin-right: 150px;
-   float:inline-end;
-   position: relative;
-   top: 130px;
-   right: 20px;
-   font-size: 40px;
-}
-
-.texto-quemsomos  {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    text-align: center;
-        
-}
-.slider,
-.texto-quemsomos {
-        width: 50%;
-      }
 
 nav {
     background-color: #142140;
-    padding:13px;
+    padding: 13px;
     height: 33px;
-    
-    text-align: center;
-    
 
-   
-    
+    text-align: center;
+
+
+
+
 
 }
 
-nav img{
-   
-    position: absolute; /* Posicionamento absoluto em relação ao cabeçalho */
-    top: 0; /* Alinha a imagem no topo */
-    left: 0; /* Alinha a imagem à esquerda */
-    width: 115px; /* Largura da imagem (ajuste conforme necessário) */
+nav img {
+
+    position: absolute;
+    /* Posicionamento absoluto em relação ao cabeçalho */
+    top: 0;
+    /* Alinha a imagem no topo */
+    left: 0;
+    /* Alinha a imagem à esquerda */
+    width: 115px;
+    /* Largura da imagem (ajuste conforme necessário) */
     height: 59px;
 
 }
 
 
 
-section img{
-    
+section img {
+
     background-image: url(capa.png);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height:auto;
+    height: auto;
 
 
 }
 
-#titulo-serviços{
+#titulo-serviços {
     color: #1b0555;
     margin-right: 150px;
-    float:center;
+    float: center;
     position: relative;
     top: 10px;
     right: -250px;
     font-size: 40px;
 
 }
+
 table {
     width: 30%;
     height: 80%;
@@ -93,30 +77,24 @@ table {
 }
 
 #contate-nos {
- color: #142140;
- text-align: left;
- font-size: 40px;
+    color: #142140;
+    text-align: left;
+    font-size: 40px;
 }
 
-#email {
+#email {}
 
-}
-
-#email2{
-    font-weight: normal;
-}    
-
-#telefone{
-
-}
-
-#telefone2{
+#email2 {
     font-weight: normal;
 }
 
-#social{
+#telefone {}
 
+#telefone2 {
+    font-weight: normal;
 }
+
+#social {}
 
 
 footer {
@@ -128,4 +106,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-

@@ -1,10 +1,7 @@
-
-
 .slider {
     margin-right: 0%;
     width: 800px;
     height: 400px;
-    padding: auto;
     overflow: hidden;
 }
 
@@ -13,8 +10,9 @@
     flex-direction: column;
     justify-content: right;
     text-align: center;
-    
+
 }
+
 .slider,
 .conteudolinhadireita {
     width: 100%;
@@ -22,8 +20,8 @@
 
 .slider,
 .conteudolinhadireita {
-        width: 50%;
-      }
+    width: 50%;
+}
 
 .slides {
     width: 400%;
@@ -119,4 +117,31 @@
 
 #radio4:checked~.navigation-auto .auto-btn4 {
     background-color: pink;
+}
+
+
+.quemsomos {
+    display: flex;
+    height: 480px;
+}
+
+.titulo-quemsomos {
+    color: #1b0555;
+    margin-right: 150px;
+    font-size: 40px;
+}
+
+.texto-quemsomos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 30px;
+
+}
+
+.slider,
+.texto-quemsomos {
+    width: 50%;
+    padding-top: 25px;
 }

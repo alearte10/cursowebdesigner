@@ -126,7 +126,7 @@
 }
 
 .titulo-quemsomos {
-    color: #1b0555;
+    color: rgb(11, 241, 230);
     margin-right: 150px;
     font-size: 40px;
 }
@@ -137,6 +137,7 @@
     text-align: center;
     padding-left: 20px;
     padding-right: 30px;
+    color: white;
 
 }
 
@@ -144,4 +145,36 @@
 .texto-quemsomos {
     width: 50%;
     padding-top: 25px;
+}
+
+.nossosservicos {
+    background-image: url(nossosservicos.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.sustentabilidade {
+    background-image: url(sustentabilidade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.mapa {
+    background-image: url(sustentabilidade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.clientes {
+    background-image: url(sustentabilidade.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
 }

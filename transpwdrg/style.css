@@ -210,7 +210,7 @@ footer {
 }
 .quemsomos {
     display: flex;
-    height: 480px;
+    height: 600px;
 }
 
 .titulo-quemsomos {
@@ -226,7 +226,7 @@ footer {
     padding-left: 20px;
     padding-right: 30px;
     color: white;
-
+   letter-spacing: 1px;
 }
 
 .slider,

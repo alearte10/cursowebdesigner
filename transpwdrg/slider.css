@@ -88,7 +88,7 @@
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 2s;
 }
 
 .navigation-auto {
@@ -117,64 +117,4 @@
 
 #radio4:checked~.navigation-auto .auto-btn4 {
     background-color: pink;
-}
-
-
-.quemsomos {
-    display: flex;
-    height: 480px;
-}
-
-.titulo-quemsomos {
-    color: rgb(11, 241, 230);
-    margin-right: 150px;
-    font-size: 40px;
-}
-
-.texto-quemsomos {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 30px;
-    color: white;
-
-}
-
-.slider,
-.texto-quemsomos {
-    width: 50%;
-    padding-top: 25px;
-}
-
-.nossosservicos {
-    background-image: url(nossosservicos.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-.sustentabilidade {
-    background-image: url(sustentabilidade.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-.mapa {
-    background-image: url(sustentabilidade.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-
-.clientes {
-    background-image: url(sustentabilidade.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
 }

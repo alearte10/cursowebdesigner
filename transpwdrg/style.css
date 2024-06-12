@@ -58,7 +58,7 @@ section img{
 
 .fundoContato {
     width: 100%;
-    height: 600px;
+    height: auto;
     position: absolute;
 
 }
@@ -212,6 +212,7 @@ footer {
 .quemsomos {
     display: flex;
     height: 600px;
+    padding-left: 5%;
 }
 
 .titulo-quemsomos {
@@ -233,7 +234,7 @@ footer {
 .slider,
 .texto-quemsomos {
     width: 50%;
-    padding-top: 25px;
+    padding-top: 2px;
 }
 
 .nossosservicos {

@@ -42,6 +42,7 @@ section img{
     background-repeat: no-repeat;
     width: 100%;
     height:auto;
+    padding-top: 0%;
 
 }
 
@@ -216,7 +217,7 @@ footer {
 }
 
 .titulo-quemsomos {
-    color: rgb(11, 241, 230);
+    color: rgb(197, 241, 239);
     margin-right: 150px;
     font-size: 350%;
 }
